@@ -1,16 +1,62 @@
 .App{
     display: flex;
     height: 90vh;
+    overflow: hidden;
 }
 .left{
   flex: 1;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(241, 241, 241);
 }
 .center{
 flex: 2;
-background-color: rgb(250, 250, 250);
+background-color: rgb(255, 255, 255);
 }
 .right{
  flex: 1;
- background-color: rgb(231, 231, 231);
+ background-color: rgb(248, 248, 248);
+}
+.leftTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.LeftMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.LeftMenu p{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+.leftNotificationSpan{
+   top:15px;
+   left:5px; 
+   font-size: 12px;
+   color: tomato;
+}
+.search{
+   margin:10px 30px;
+   display: flex;
+   height: 30px;
+   border-radius: 25px;
+   background-color: white;
+   align-items: center;
+   justify-content: center;
+}
+.search input{
+   height: 30px;
+   border: none;
+   padding-left: 20px;
+   width: 100%;
+   border-radius: 25px;
+
+}
+.LeftCardContainer{
+  margin: 10px 30px;
+  height: 60vh;
+  overflow-y: scroll;
 }
