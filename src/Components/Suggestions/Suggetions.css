@@ -1,0 +1,27 @@
+.Suggestions{
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Suggestions img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.s-info p{
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}
+.s-button{
+    border: none;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-import { Phone, VideoCall } from "@mui/icons-material";
+import { EmojiEmotions, Link, Mic, MoreHoriz, Phone, Send, VideoCall } from "@mui/icons-material";
 import "./Center.css";
 
 export default function Center() {
@@ -14,8 +14,18 @@ export default function Center() {
             </div>
             <div className="c-top-r">
                  <Phone style={{marginRight:"10px"}} />
-                 <VideoCall  style={{marginRight:"10px"}}  />
+                 <VideoCall  style={{marginRight:"10px",color:"blueviolet"}}  />
+                 <MoreHoriz style={{color:"gray",marginRight:"10px"}} />
             </div>
+        </div>
+        <div className="c-bottom">
+              <div className="inputContainer">
+                  <Link />
+                  <input type="text" placeholder="type here" />
+                  <EmojiEmotions style={{color:"orange"}} />
+                  <Mic  />
+                  <Send style={{color:"blueviolet"}} />
+              </div>
         </div>
     </div>
   )

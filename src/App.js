@@ -4,6 +4,7 @@ import LeftTop from "./Components/LeftTop/LeftTop";
 import {AddCircle, Search} from "@mui/icons-material";
 import LeftCard from "./Components/LeftCard/LeftCard";
 import Center from "./Components/Center/Center";
+import Right from "./Components/Right/Right";
 
 function App() {
   return (
@@ -40,7 +41,9 @@ function App() {
           <div className="center">
                <Center />
           </div>
-          <div className="right">right</div>
+          <div className="right">
+               <Right />
+          </div>
         </div>
     </div>
    

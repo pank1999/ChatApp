@@ -1,0 +1,24 @@
+.NotificationCard{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.NotificationCard img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.NotificationCard h5 span{
+     color: blueviolet;
+}
+.NotificationCard p{
+    font-size: 12px;
+}
+.n-desc{
+    margin-left: 20px;
+}
