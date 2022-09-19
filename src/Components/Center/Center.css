@@ -72,3 +72,20 @@ height: 90vh;
     border: none;
     padding-left: 50px;
 }
+.chatbox{
+    overflow-y: scroll;
+    height: 74vh;
+}
+.chatbox-wrapper{
+  position: relative;  
+}
+
+.default-message{
+    text-align: center;
+    color: rgb(175, 173, 173);
+    font-size: 40px;
+    position: relative;
+    top:40%;
+    left: 10%;
+    align-items: center;
+}

@@ -2,7 +2,7 @@ import "./LeftTop.css";
 import {LocalPhone,ModeComment,Groups,Settings,AccountCircle} from "@mui/icons-material";
 
 
-export default function LeftTop() {
+export default function LeftTop({loggedUser,setUserProfile,UserProfile}) {
   return (
     <div className="leftTop">
         <div className="leftTopIcons">
@@ -18,8 +18,8 @@ export default function LeftTop() {
         <div className="leftTopIcons">
            <Settings />
         </div>
-        <div className="leftTopIcons">
-           <AccountCircle />
+        <div className="leftTopIcons" onClick={()=>{setUserProfile(true)}}>
+             <img src={loggedUser.user.img} alt="img" />
         </div>
         
     </div>

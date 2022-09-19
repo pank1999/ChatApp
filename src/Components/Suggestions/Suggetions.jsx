@@ -1,14 +1,30 @@
+import axios from "axios";
 import "./Suggetions.css";
 
-export default function Suggetions() {
+export default function Suggetions({user,loggedUser}) {
+  const handleClick=async()=>{
+     try{
+         const res=await axios.post("http://localhost:3001/api/Conversation",
+         { 
+            senderId:loggedUser.user._id,
+            receiverId:user._id
+         });
+         console.log(res);
+
+     }
+     catch(err){
+           console.log(err);
+     }
+
+  }
   return (
     <div className="Suggestions">
-         <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGdaSIXe9cqjw/profile-displayphoto-shrink_800_800/0/1619779363742?e=1666828800&v=beta&t=xOGUaD-oYYYtcscc15WrZjMokRwPkNazussxPXgpMdI" alt="" />
+         <img src={user.img} alt="" />
          <div className="s-info">
-            <h4>Saurabh pandey </h4>
+            <h4> {user.name}</h4>
             <p>12 Mutuals</p>
          </div>
-         <button className="s-button">Add</button>
+         <button className="s-button" onClick={handleClick} >Add</button>
     </div>
   )
 }

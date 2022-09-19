@@ -1,0 +1,12 @@
+.Message{
+    max-width:40%;
+    margin-top: 10px;
+    width: fit-content;
+    padding:10px 20px;
+   
+}
+span{
+    margin-top: 0px;
+    font-size: 12px;
+    color: gray;
+}
